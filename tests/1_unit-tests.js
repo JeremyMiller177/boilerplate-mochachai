@@ -39,7 +39,7 @@ suite("Equality", function () {
       "== compares object references"
     );
     assert.equal(6 * "2", "12");
-    assert.equal(6 + "2", "12");
+    assert.equal(6 + "2", "62");
   });
   // #6
   test("#strictEqual, #notStrictEqual", function () {
@@ -135,7 +135,7 @@ suite("Strings", function () {
   });
   // #15
   test("#match, #notMatch", function () {
-    const regex = /^#\\sname\\:\\s[\\w\\s]+,\\sage\\:\\s\\d+\\s?$/;
+    const regex = /^# name: [\w\s]+, age: \d+\n$/;
     assert.match(formatPeople("John Doe", 35), regex);
     assert.notMatch(formatPeople("Paul Smith III", "twenty-four"), regex);
   });
