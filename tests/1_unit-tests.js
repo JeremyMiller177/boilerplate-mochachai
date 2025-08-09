@@ -10,8 +10,7 @@ suite("Basic Assertions", function () {
   // #2
   test("#isDefined, #isUndefined", function () {
     assert.isDefined(null, "this is an optional message");
-    assert.isNotNull(1, "this es un mensaje opcional");
-    assert.isNotNull(1, "this es un mensaje opcional");
+    assert.isUndefined(undefined, "this is an optional message");
   });
 
   // #3
