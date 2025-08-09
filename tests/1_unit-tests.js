@@ -1,10 +1,11 @@
-const assert = require("chai").assert;
-
 suite("Basic Assertions", function () {
   // #1
   test("#isNull, #isNotNull", function () {
-    assert.isNull(null, "this is an optional message");
-    assert.isNotNull(1, "this is an optional message");
+    assert.isNull(
+      null,
+      "esta es una descripción de error opcional, por ejemplo, nulo es nulo"
+    );
+    assert.isNotNull(1, "1 no es nulo");
   });
 
   // #2
